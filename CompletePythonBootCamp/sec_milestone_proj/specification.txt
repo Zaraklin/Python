@@ -1,0 +1,31 @@
+Deck has 52 cards
+
+Players:
+- computer dealer
+- human player
+
+Begining:
+- human player places a bet
+- dealer starts with 1 card face up and 1 card face down
+- human starts with 2 cards face up
+- human player goes first
+- after goes the computer dealer until the games end
+
+Goal:
+- human player has to get closer to a total value of 21 than the dealer does
+
+Possible actions (human player):
+- Hit: receive a card from the deck
+- Stay: stop receiving cards
+
+Possible actions (computer dealer):
+- If the player is under 21, dealer must hit until it gets more than the player and right
+or under 21, or until its loses when gets above 21 (gets busted)
+
+End game:
+- human player stay and the computer dealer gets more than him and right or under 21
+- human player or computer dealer gets above 21 (gets busted)
+
+Special rules:
+- Face cards (Jack, Queen, King) count as 10
+- Aces can count as 1 or 11, the player must decide
