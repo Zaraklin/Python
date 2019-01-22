@@ -1,8 +1,8 @@
 import random
 
 class Card:
-    def __init__(self, cardValue, cardRank):
-        self.cardRank = cardRank
+    def __init__(self, cardValue, cardSuit):
+        self.cardSuit = cardSuit
 
         if cardValue == 1:
             self.cardValue = cardValue
@@ -32,9 +32,9 @@ class Card:
 
     def __str__(self):
         if self.cardType == "Number":
-            return f"{self.cardValue} - {self.cardRank}"
+            return f"{self.cardValue} - {self.cardSuit}"
         else:
-            return f"{self.cardType} - {self.cardRank}"
+            return f"{self.cardType} - {self.cardSuit}"
 
 class Deck:
     def __init__(self):
