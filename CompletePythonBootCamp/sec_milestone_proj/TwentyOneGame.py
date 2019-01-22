@@ -41,7 +41,13 @@ class TwentyOneGame:
             choice = int(input("What do you do? [1-Hit, 2-Stay] > "))
             if choice == 1:
                 print("Player chooses to Hit...")
-                self.human.hand.receiveCard(self.deck.getCard())
+                
+                card = self.deck.getCard()
+                if card.isAce():
+                    val = int(input("It's an ace, what value it should have? 1 or 11? "))
+                    card.specialAce(val)
+
+                self.human.hand.receiveCard(card)
                 again = True
             elif choice == 2:
                 print("Player chooses to stay...")

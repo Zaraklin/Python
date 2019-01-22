@@ -23,6 +23,12 @@ class Card:
             self.cardValue = 0
             self.cardType = "Invalid Type"
 
+    def isAce(self):
+        if self.cardType == "Ace":
+            return True
+        else:
+            return False
+
     def specialAce(self, val):
         if self.cardType == "Ace" and (val == 1 or val == 11):
             self.cardValue = val
